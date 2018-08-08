@@ -1,0 +1,12 @@
+name: MLflow Demo with UCI Adult Data Set
+channels:
+  - defaults
+dependencies:
+  - numpy=1.15.0
+  - pandas=0.23.1
+  - scikit-learn=0.19.1
+  - matplotlib=2.2.2
+  - seaborn=0.8.1
+  - pip:
+    - mlflow
+    - lightgbm=2.1.1

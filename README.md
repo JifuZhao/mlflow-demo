@@ -16,7 +16,6 @@ Simple Demo of MLflow Project
 | occupation     | Tech-support, Craft-repair, Other-service, Sales, Exec-managerial, Prof-specialty, Handlers-cleaners, Machine-op-inspct, Adm-clerical, Farming-fishing, Transport-moving, Priv-house-serv, Protective-serv, Armed-Forces                                                                                       |
 | relationship   | Wife, Own-child, Husband, Not-in-family, Other-relative, Unmarried        |
 | race           | White, Asian-Pac-Islander, Amer-Indian-Eskimo, Other, Black               |
-| capital-gain   | continuous                                                                |
 | sex            | Female, Male                                                              |
 | capital-gain   | continuous                                                                |
 | capital-loss   | continuous                                                                |
