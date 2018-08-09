@@ -46,10 +46,10 @@ Gradient Boosting model from LigthGBM are implemented. Check the [documentation]
 ```console
 $ git clone https://github.com/JifuZhao/mlflow-demo.git
 $ mlflow run mlflow-demo \
--P train_path=absolute path/mlflow-demo/data/train.csv \
--P test_path=absolute path/mlflow-demo/data/test.csv \
--P num_boost_round=1000 -P learning_rate=0.1 -P num_leaves=31 \
--P max_depth=-1 -P min_data_in_leaf=20
+  -P train_path=absolute path/mlflow-demo/data/train.csv \
+  -P test_path=absolute path/mlflow-demo/data/test.csv \
+  -P num_boost_round=1000 -P learning_rate=0.1 -P num_leaves=31 \
+  -P max_depth=-1 -P min_data_in_leaf=20
 ```
 
 Note: You need to change the file path to be your local absolute path.
