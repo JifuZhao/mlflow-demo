@@ -5,10 +5,11 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      data_file: path
-      regularization: {type: float, default: 0.1}
-    command: "python train.py -r {regularization} {data_file}"
-  validate:
-    parameters:
-      data_file: path
-    command: "python validate.py {data_file}"
+      train_path: path
+      test_path: path
+      num_boost_round: {type: int, default: 1000}
+      learning_rate: {type: float, default: 0.1}
+      num_leaves: {type: int, default: 31}
+      max_depth: {type: int, default: -1}
+      min_data_in_leaf: {type: int, default: 20}
+    command: "python train.py {train_path} {test_path} {num_boost_round} {learning_rate} {num_leaves} {max_depth} {min_data_in_leaf}"

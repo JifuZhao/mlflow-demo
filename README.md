@@ -1,5 +1,5 @@
 # mlflow-demo
-Simple Demo of MLflow Project
+Simple Demo of MLflow Project with LightGBM
 
 ***
 ## Data
@@ -40,7 +40,41 @@ Gradient Boosting model from LigthGBM are implemented. Check the [documentation]
 
 
 ***
-## Instructions
+## How to run the code
+* Method 1:
+
+```console
+$ git clone https://github.com/JifuZhao/mlflow-demo.git
+$ mlflow run mlflow-demo \
+-P train_path=absolute path/mlflow-demo/data/train.csv \
+-P test_path=absolute path/mlflow-demo/data/test.csv \
+-P num_boost_round=1000 -P learning_rate=0.1 -P num_leaves=31 \
+-P max_depth=-1 -P min_data_in_leaf=20
+```
+
+Note: You need to change the file path to be your local absolute path.
+
+After the code successfully runs, you can get the following results:
+
+<img src="images/output.png" width="1000" />
+
+* Method 2:
+
+```console
+$ git clone https://github.com/JifuZhao/mlflow-demo.git
+$ cd mlflow-demo/
+$ python train.py ./data/train.csv ./data/test.csv 1000 0.1 31 -1 20
+```
+
+After running, you can view the result through MLflow UI:
+
+```console
+$ mlflow ui
+```
+
+In the browser, go to `http://127.0.0.1:5000`, you will get the following results.
+
+<img src="images/mlflow.png" width="1000" />
 
 
 ***
@@ -48,3 +82,6 @@ Gradient Boosting model from LigthGBM are implemented. Check the [documentation]
 * [mlflow/mlflow-example](https://github.com/mlflow/mlflow-example)
 * [mserrate/mlflow-sample](https://github.com/mserrate/mlflow-sample)
 * [dmatrix/jsd-mlflow-examples](https://github.com/dmatrix/jsd-mlflow-examples)
+
+
+Copyright @ Jifu Zhao 2018
